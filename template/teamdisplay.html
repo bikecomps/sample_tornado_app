@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <script src="/static/js/teamdisplay.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <ul>
+       {% for item in team %}
+         <li>{{ escape(item) }}</li>
+       {% end %}
+     </ul>
+     <button onclick="showMe();">Click me!</button>
+  </body>
+</html>
